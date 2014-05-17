@@ -1,0 +1,23 @@
+{
+    "name" : "slack-stuart",
+    "version" : "0.1.0",
+    "author" : "Greg Tracy",
+
+    "description" : "Slackbot Server to make your Slack instance more enjoyable.",
+    "keywords" : ["slack", "slackbot"],
+    "bugs" : "https://github.com/gtracy/slack-stuart/issues",
+    "license" : "MIT",
+
+    "dependencies": {
+
+        "express"    : "3.1.0",
+        "request"    : "2.29.0",
+        "cron"       : "1.0.1",
+        "underscore" : "1.6.0",
+        "logme"      : "0.3.8",
+        "time"       : "0.8.3",
+
+        "twilio"     : "1.6.0",
+        "yelp"       : "0.1.1"
+    }
+}

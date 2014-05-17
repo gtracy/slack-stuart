@@ -1,0 +1,83 @@
+{
+	"slash_command" : {
+
+	    "random" : {
+	    	"active" : true,
+	        "name"   : "Random number generator",
+	        "hook"   : "./plugins/slash/random",
+	        "author" : "greg",
+	        "config" : {}
+	    },
+
+	    "ama" : {
+	    	"active" : true,
+	        "name"   : "Ask me anything. An 8Ball app",
+	        "hook"   : "./plugins/slash/ama",
+	        "author" : "greg",
+	        "config" : {}
+	    },
+
+	    "food" : {
+	    	"active" : false,
+	    	"name"   : "Get food recommendations from Yelp",
+	    	"hook"   : "./plugins/slash/yelp",
+	    	"author" : "greg",
+	    	"config" : {
+                "key" : "FIXME",
+                "secret" : "FIXME",
+                "token" : "FIXME",
+                "token_secret" : "FIXME",
+
+                "location" : "43.073841, -89.388692"
+            }
+	    },
+
+	    "conference" : {
+	    	"active" : false,
+	    	"name"   : "Create a phone conference line",
+	    	"hook"   : "./plugins/slash/conference",
+	    	"author" : "greg",
+			"config" : {
+                "sid"        : "FIXME",
+                "auth_token" : "FIXME",
+                "caller_id"  : "+1FIXME",
+                "area_code"  : "608",
+                "max_age"    : 1,
+                "greeting"    : "Welcome to Greg's conference room",
+                "inbound_numbers" : ["+1FIXME", "+1FIXME-OR-DELETE"]
+			}
+	    }
+	},
+
+	"cron" : {
+		"inspire" : {
+	    	"active" : true,
+			"name" : "Inspiring messages",
+			"hook" : "./plugins/cron/inspire",
+			"author" : "greg",
+			"config" : {}
+		},
+
+		"weather" : {
+	    	"active" : false,
+			"name" : "Get the current weather",
+			"hook" : "./plugins/cron/weather",
+			"author" : "greg",
+		    "config" : {
+		        "api_key" : "FIXME",
+		        "locations" : [
+                    {
+                    	"name" : "Madison",
+                    	"loc"  : "43.073841, -89.388692"
+                    },{
+                    	"name" : "Palo Alto",
+                    	"loc"  : "37.4292, -122.1381"
+                    },{
+                    	"name" : "Boston",
+                    	"loc"  : "42.3369, -71.2097"
+                    }
+		        ]
+            }
+		}
+	}
+}
