@@ -45,6 +45,7 @@ He also comes with an SMS interface which allows you to inject content into Slac
 
 ##Let it rip!
 
+    npm install
     node slack-stuart.js
 
 In your browser, visit:
