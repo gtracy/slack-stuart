@@ -30,6 +30,12 @@ app.configure(function() {
     // Define the webhook endpoints
     require('../lib/routes/slack')(app);
     require('../lib/routes/twilio')(app);
+
+    // Default root route for server
+    app.get('/', function(req,res,next) {
+        res.send('Success! Stuart is running.');
+    });
+
 });
 
 // start the web application server
