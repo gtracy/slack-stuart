@@ -16,7 +16,12 @@ var app = express();
 app.configure(function() {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
-    app.use(app.router);
+
+    // simple logger
+    app.use(function(req, res, next){
+        logme.info(req.method + '  ' + req.url);
+        next();
+    });
 
     /**
      *  Default error handler when things go wrong
@@ -26,6 +31,8 @@ app.configure(function() {
         res.json({error:'Internal Server Error'},500);
         next();
     });
+
+    app.use(app.router);
 
     // Define the webhook endpoints
     require('../lib/routes/slack')(app);
