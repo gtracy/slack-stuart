@@ -78,6 +78,14 @@
                     }
 		        ]
             }
+		},
+
+		"worldcup" : {
+			"active" : true,
+			"name"   : "World Cup score updates",
+			"hook"   : "./plugins/cron/worldcup",
+			"author" : "greg",
+			"config" : {}
 		}
 	}
 }
