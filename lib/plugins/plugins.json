@@ -17,6 +17,14 @@
 	        "config" : {}
 	    },
 
+	    "hn" : {
+	    	"active" : true,
+	        "name"   : "Random Hacker News",
+	        "hook"   : "./plugins/slash/hn",
+	        "author" : "mabermoske",
+	        "config" : {}
+	    },
+
 	    "food" : {
 	    	"active" : false,
 	    	"name"   : "Get food recommendations from Yelp",
