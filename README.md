@@ -25,28 +25,23 @@ He also comes with an SMS interface which allows you to inject content into Slac
 ##Getting Started
 
 1. Configure your [Slack Integrations](http://slack.com/integrations)
-    1. Create a new slash command
+    1. Create a new Slash Command
       * Name the command /stuart
       * Set the URL to be http://yourhostname/slack
       * Method should be POST
       * Label should be Stuart or whatever you name it in your config file
-      * Note the token on the config page. You'll need it for your config page.
-    1. Create an Inbound Webhook
-      * From the "Setup Instructions",
-          * Copy the "Unique Webhook URL" from Slack into your config.js file
-          * Copy the token from Slack into your config.js file
+    1. Create an Inbound Webhook. Every message from Stuart will come via this webhook.
       * From the "Integration Settings"
           * Set the default channel you'd like (don't worry, Stuart can still post to any channel)
           * Set the bot name (Stuart)
           * Set the default bot avatar (also set in config.js)
 1. Update config.js in your server project
     1. <b>host</b> : should match the hostname where you've deployed Stuart
-    1. <b>slack\_host</b> : should match the Slack settings for your webhook
-    1. <b>slack\_token</b> : should match the Slack settings found in your slash command
+    1. <b>slack\_host</b> : should match the "Webhook URL" setting found in your Inbound Webhook configuration
+    1. <b>slack\_token</b> : should match the "Token" value found in your Slash Command configuration
 
 ##Let it rip!
 
-    npm install
     node slack-stuart.js
 
 In your browser, visit:
