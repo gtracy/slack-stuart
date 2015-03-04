@@ -21,6 +21,6 @@
         "yelp"       : "0.1.1",
 
         "async"      : "*",
-        "requestify" : "0.1.16"
+        "requestify" : "0.1.17"
     }
 }
