@@ -1,12 +1,16 @@
 {
     "name" : "slack-stuart",
-    "version" : "0.2.0",
+    "version" : "0.2.1",
     "author" : "Greg Tracy",
 
     "description" : "Slackbot Server to make your Slack instance more enjoyable.",
     "keywords" : ["slack", "slackbot"],
     "bugs" : "https://github.com/gtracy/slack-stuart/issues",
     "license" : "MIT",
+    "scripts": {
+      "start": "TZ=UTC node bin/slack-stuart.js",
+      "watch": "TZ=UTC nodemon bin/slack-stuart.js"
+    },
 
     "dependencies": {
 
