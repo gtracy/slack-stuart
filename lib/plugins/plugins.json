@@ -54,7 +54,15 @@
                 "greeting"    : "Welcome to Greg's conference room",
                 "inbound_numbers" : ["+1FIXME", "+1FIXME-OR-DELETE"]
 			}
-	    }
+	    },
+
+        "markov" : {
+          "active" : true,
+          "name"   : "Ramblings of a Markov chainer",
+          "hook"   : "./plugins/slash/markov",
+          "author" : "sblaz",
+          "config" : {}
+        }
 	},
 
 	"cron" : {
