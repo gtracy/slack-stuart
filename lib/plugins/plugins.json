@@ -63,7 +63,9 @@
 			"name" : "Inspiring messages",
 			"hook" : "./plugins/cron/inspire",
 			"author" : "greg",
-			"config" : {}
+			"config" : {
+			  "channel" : "general"
+			}
 		},
 
 		"weather" : {
@@ -72,6 +74,7 @@
 			"hook" : "./plugins/cron/weather",
 			"author" : "greg",
 		    "config" : {
+			  	"channel" : "general",
 		        "api_key" : "FIXME",
 		        "locations" : [
                     {
@@ -93,7 +96,9 @@
 			"name"   : "World Cup score updates",
 			"hook"   : "./plugins/cron/worldcup",
 			"author" : "greg",
-			"config" : {}
+			"config" : {
+			  "channel" : "futbol"
+			}
 		}
 	}
 }
