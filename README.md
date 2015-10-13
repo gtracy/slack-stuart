@@ -100,11 +100,13 @@ To create a Cron task, you need to write one method - register() - and define th
 JSON spec :
 
     "inspire" : {
-        "active" : true,
+      "active" : true,
       "name" : "Inspiring messages",
       "hook" : "./plugins/cron/inspire",
       "author" : "greg",
-      "config" : {}
+      "config" : {
+        "channel" : "general"
+      }
     }
 
 The code implemented in the "hook" file (in this case, ./plugins/cron/inspire) :
@@ -114,7 +116,8 @@ The code implemented in the "hook" file (in this case, ./plugins/cron/inspire) :
 
     // in this example, positive_quote() is another internal function not shown here
     var cronTask = function() {
-        Stuart.slack_post("_"+positive_quote()+"_", '#general');
+        var plugin = this;
+        Stuart.slack_post("_"+positive_quote()+"_", '#'+plugin.config.channel);
     };
 
     module.exports.register = function() {
