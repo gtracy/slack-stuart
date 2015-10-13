@@ -1,26 +1,32 @@
 {
-    "name" : "slack-stuart",
-    "version" : "0.2.0",
-    "author" : "Greg Tracy",
-
-    "description" : "Slackbot Server to make your Slack instance more enjoyable.",
-    "keywords" : ["slack", "slackbot"],
-    "bugs" : "https://github.com/gtracy/slack-stuart/issues",
-    "license" : "MIT",
-
-    "dependencies": {
-
-        "express"    : "3.1.0",
-        "request"    : "2.29.0",
-        "cron"       : "1.0.1",
-        "underscore" : "1.6.0",
-        "logme"      : "0.3.8",
-        "time"       : "0.11.1",
-
-        "twilio"     : "1.6.0",
-        "yelp"       : "0.1.1",
-
-        "async"      : "*",
-        "requestify" : "0.1.17"
-    }
+  "name": "slack-stuart",
+  "version": "0.3.0",
+  "author": "Greg Tracy",
+  "description": "Slackbot Server to make your Slack instance more enjoyable.",
+  "keywords": [
+    "slack",
+    "slackbot"
+  ],
+  "bugs": "https://github.com/gtracy/slack-stuart/issues",
+  "license": "MIT",
+  "dependencies": {
+    "express": "3.1.0",
+    "request": "2.29.0",
+    "cron": "1.0.1",
+    "underscore": "1.6.0",
+    "logme": "0.3.8",
+    "time": "0.11.1",
+    "twilio": "1.6.0",
+    "yelp": "0.1.1",
+    "async": "*",
+    "requestify": "0.1.17"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "rewire": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha \"test/**/*.js\""
+  }
 }
