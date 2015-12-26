@@ -1,0 +1,19 @@
+{
+    "stuart" : {
+    	"active"   : true,
+    	"bot_name" : "stuart",
+        "name"   : "Stuart",
+        "hook"   : "./stuart/stuart",
+        "author" : "greg",
+        "config" : {}
+    },
+
+    "sick" : {
+    	"active"   : false,
+    	"bot_name" : "Dr. Better",
+        "name"   : "Dr. Better",
+        "hook"   : "./sick/sick",
+        "author" : "greg",
+        "config" : {}
+    }
+}
