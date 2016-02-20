@@ -1,7 +1,6 @@
 module.exports = {
 
-  // Stuart server parameters required for Twilio integration
-  "host"   : "http://FIXME",
+  // Port server listens on
   "port"   : "8087",
 
   // The slash command shown in help text, e.g., /stuart

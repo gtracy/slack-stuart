@@ -49,8 +49,9 @@
 		          "auth_token" : "FIXME",
 		          "caller_id"  : "+1FIXME",
 		          "area_code"  : "608",
-		          "max_age"    : 1,
-		          "greeting"    : "Welcome to Greg's conference room",
+		          "max_age"    : 15,
+							"host"       : "http://FIXME",
+		          "greeting"   : "Welcome to Greg's conference room",
 		          "inbound_numbers" : ["+1FIXME", "+1FIXME-OR-DELETE"]
 					}
 	    },
