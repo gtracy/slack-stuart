@@ -23,7 +23,7 @@ He also comes with an SMS interface which allows you to inject content into Slac
 
 
 ##Getting Started
-Note that the way in which the slash command is built, it *always* relies on the Incoming Webhooks to deliver the message. So you must configure both the slash command and the incoming webhooks to make this work. 
+Note that the way in which the slash command is built, it *always* relies on the Incoming Webhooks to deliver the message. So you must configure both the slash command and the incoming webhooks to make this work.
 
 1. Configure your [Slack Integrations](https://slack.com/apps/manage)
     1. Create a new Slash Command
@@ -64,7 +64,7 @@ For example, this would call Stuart's random plugin from inside of Slack
 
 > /stuart random
 
-To create a new slash instruction, you need to write two methods - run() and help() - and define the plugin details in the plugins.json spec. For example, the random command has the following configuration:
+To create a new slash instruction, you need to write two methods - run() and help() - and define the plugin details in the plugins.json spec. You can alternately write an init() method if your plugin requires some initialization when Stuart starts up. For example, the random command has the following configuration:
 
 JSON spec :
 
