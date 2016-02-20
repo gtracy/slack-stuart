@@ -2,7 +2,7 @@
 	"slash_command" : {
 
 	    "random" : {
-	    	"active" : true,
+		    	"active" : true,
 	        "name"   : "Random number generator",
 	        "hook"   : "./plugins/slash/random",
 	        "author" : "greg",
@@ -10,7 +10,7 @@
 	    },
 
 	    "ama" : {
-	    	"active" : true,
+		    	"active" : true,
 	        "name"   : "Ask me anything. An 8Ball app",
 	        "hook"   : "./plugins/slash/ama",
 	        "author" : "greg",
@@ -18,7 +18,7 @@
 	    },
 
 	    "hn" : {
-	    	"active" : true,
+		    	"active" : true,
 	        "name"   : "Random Hacker News",
 	        "hook"   : "./plugins/slash/hn",
 	        "author" : "mabermoske",
@@ -26,87 +26,87 @@
 	    },
 
 	    "food" : {
-	    	"active" : false,
-	    	"name"   : "Get food recommendations from Yelp",
-	    	"hook"   : "./plugins/slash/yelp",
-	    	"author" : "greg",
-	    	"config" : {
-                "key" : "FIXME",
-                "secret" : "FIXME",
-                "token" : "FIXME",
-                "token_secret" : "FIXME",
-
-                "location" : "43.073841, -89.388692"
-            }
+		    	"active" : false,
+		    	"name"   : "Get food recommendations from Yelp",
+		    	"hook"   : "./plugins/slash/yelp",
+		    	"author" : "greg",
+		    	"config" : {
+              "key" : "FIXME",
+              "secret" : "FIXME",
+              "token" : "FIXME",
+              "token_secret" : "FIXME",
+              "location" : "43.073841, -89.388692"
+          }
 	    },
 
 	    "conference" : {
-	    	"active" : false,
-	    	"name"   : "Create a phone conference line",
-	    	"hook"   : "./plugins/slash/conference",
-	    	"author" : "greg",
-			"config" : {
-                "sid"        : "FIXME",
-                "auth_token" : "FIXME",
-                "caller_id"  : "+1FIXME",
-                "area_code"  : "608",
-                "max_age"    : 1,
-                "greeting"    : "Welcome to Greg's conference room",
-                "inbound_numbers" : ["+1FIXME", "+1FIXME-OR-DELETE"]
-			}
+		    	"active" : false,
+		    	"name"   : "Create a phone conference line",
+		    	"hook"   : "./plugins/slash/conference",
+		    	"author" : "greg",
+					"config" : {
+		          "sid"        : "FIXME",
+		          "auth_token" : "FIXME",
+		          "caller_id"  : "+1FIXME",
+		          "area_code"  : "608",
+		          "max_age"    : 1,
+		          "greeting"    : "Welcome to Greg's conference room",
+		          "inbound_numbers" : ["+1FIXME", "+1FIXME-OR-DELETE"]
+					}
 	    },
 
-        "markov" : {
-          "active" : true,
-          "name"   : "Ramblings of a Markov chainer",
-          "hook"   : "./plugins/slash/markov",
-          "author" : "sblaz",
-          "config" : {}
-        }
+      "markov" : {
+	        "active" : true,
+	        "name"   : "Ramblings of a Markov chainer",
+	        "hook"   : "./plugins/slash/markov",
+	        "author" : "sblaz",
+	        "config" : {}
+      }
 	},
 
 	"cron" : {
-		"inspire" : {
-	    	"active" : true,
-			"name" : "Inspiring messages",
-			"hook" : "./plugins/cron/inspire",
-			"author" : "greg",
-			"config" : {
-			  "channel" : "general"
-			}
-		},
+			"inspire" : {
+		    	"active" : true,
+					"name" : "Inspiring messages",
+					"hook" : "./plugins/cron/inspire",
+					"author" : "greg",
+					"config" : {
+						  "channel" : "general"
+					}
+			},
 
 		"weather" : {
-	    	"active" : false,
-			"name" : "Get the current weather",
-			"hook" : "./plugins/cron/weather",
-			"author" : "greg",
+	    	"active" : true,
+				"name" : "Get the current weather",
+				"hook" : "./plugins/cron/weather",
+				"author" : "greg",
 		    "config" : {
-			  	"channel" : "general",
+				  	"channel" : "general",
 		        "api_key" : "FIXME",
 		        "locations" : [
-                    {
-                    	"name" : "Madison",
-                    	"loc"  : "43.073841, -89.388692"
-                    },{
-                    	"name" : "Palo Alto",
-                    	"loc"  : "37.4292, -122.1381"
-                    },{
-                    	"name" : "Boston",
-                    	"loc"  : "42.3369, -71.2097"
-                    }
+                  {
+                  	"name" : "Madison",
+                  	"loc"  : "43.073841, -89.388692"
+                  },{
+                  	"name" : "Palo Alto",
+                  	"loc"  : "37.4292, -122.1381"
+                  },{
+                  	"name" : "Boston",
+                  	"loc"  : "42.3369, -71.2097"
+                  }
 		        ]
-            }
+        }
 		},
 
 		"worldcup" : {
-			"active" : true,
-			"name"   : "World Cup score updates",
-			"hook"   : "./plugins/cron/worldcup",
-			"author" : "greg",
-			"config" : {
-			  "channel" : "futbol"
-			}
+				"active" : false,
+				"name"   : "World Cup score updates",
+				"hook"   : "./plugins/cron/worldcup",
+				"author" : "greg",
+				"config" : {
+					  "channel" : "futbol"
+				}
 		}
+
 	}
 }
