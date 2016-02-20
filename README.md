@@ -23,8 +23,9 @@ He also comes with an SMS interface which allows you to inject content into Slac
 
 
 ##Getting Started
+Note that the way in which the slash command is built, it *always* relies on the Incoming Webhooks to deliver the message. So you must configure both the slash command and the incoming webhooks to make this work. 
 
-1. Configure your [Slack Integrations](http://slack.com/integrations)
+1. Configure your [Slack Integrations](https://slack.com/apps/manage)
     1. Create a new Slash Command
       * Name the command /stuart
       * Set the URL to be http://yourhostname/slack
