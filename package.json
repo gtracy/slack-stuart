@@ -1,6 +1,6 @@
 {
   "name": "slack-stuart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Greg Tracy",
   "description": "Slackbot Server to make your Slack instance more enjoyable.",
   "keywords": [
