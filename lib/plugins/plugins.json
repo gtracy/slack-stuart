@@ -62,7 +62,16 @@
 	        "hook"   : "./plugins/slash/markov",
 	        "author" : "sblaz",
 	        "config" : {}
-      }
+      },
+
+			"flowers" : {
+					"active" : true,
+					"name"   : "send flowers",
+					"hook"   : "./plugins/slash/flowers",
+					"author" : "greg",
+					"config" : {}
+	    }
+
 	},
 
 	"cron" : {
