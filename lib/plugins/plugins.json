@@ -1,6 +1,20 @@
 {
 	"slash_command" : {
-
+	
+		"rockpaperscissors" : {
+		    	"active" : true,
+	        "name"   : "Simple rock paper scissors game",
+	        "hook"   : "./plugins/slash/rockpaperscissors",
+	        "author" : "jack.michuda",
+	        "config" : {}
+	    },
+		"horoscope":{
+				"active": true,
+			"name"   : "Horoscope reader",
+	        "hook"   : "./plugins/slash/horoscope",
+	        "author" : "jack.michuda",
+	        "config" : {}
+		},
 	    "random" : {
 		    	"active" : true,
 	        "name"   : "Random number generator",
@@ -8,7 +22,7 @@
 	        "author" : "greg",
 	        "config" : {}
 	    },
-
+					
 	    "ama" : {
 		    	"active" : true,
 	        "name"   : "Ask me anything. An 8Ball app",
