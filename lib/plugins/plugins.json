@@ -39,6 +39,14 @@
 	        "config" : {}
 	    },
 
+	    "poker" : {
+	        "active" : true,
+	        "name"   : "5 Card Draw",
+	        "hook"   : "./plugins/slash/poker",
+	        "author" : "dasch",
+	        "config" : {}
+	    },
+
 	    "food" : {
 		    	"active" : false,
 		    	"name"   : "Get food recommendations from Yelp",
