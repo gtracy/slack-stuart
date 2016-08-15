@@ -39,6 +39,25 @@
 	        "config" : {}
 	    },
 
+	    "poker" : {
+	        "active" : true,
+	        "name"   : "5 Card Draw",
+	        "hook"   : "./plugins/slash/poker",
+	        "author" : "dasch",
+	        "config" : {}
+	    },
+		
+		"thesaurus" : {
+			"active" : true,
+			"name"   : "Thesaurus",
+			"hook"	 : "./plugins/slash/thesaurus",
+			"author" : "lorcharlie",
+			"config" : {
+				"key"     : "FIXME",
+				"version" : 2
+			}
+		},
+
 	    "food" : {
 		    	"active" : false,
 		    	"name"   : "Get food recommendations from Yelp",
