@@ -46,6 +46,17 @@
 	        "author" : "dasch",
 	        "config" : {}
 	    },
+		
+		"thesaurus" : {
+			"active" : true,
+			"name"   : "Thesaurus",
+			"hook"	 : "./plugins/slash/thesaurus",
+			"author" : "lorcharlie",
+			"config" : {
+				"key"     : "FIXME",
+				"version" : 2
+			}
+		},
 
 	    "food" : {
 		    	"active" : false,
