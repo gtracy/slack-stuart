@@ -48,7 +48,7 @@
 	    },
 		
 		"thesaurus" : {
-			"active" : true,
+			"active" : false,
 			"name"   : "Thesaurus",
 			"hook"	 : "./plugins/slash/thesaurus",
 			"author" : "lorcharlie",
