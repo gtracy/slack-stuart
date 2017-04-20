@@ -1,4 +1,4 @@
-#Stuart
+# Stuart
 
 Stuart is an extensible Slack Bot. Ready to take on any task that you've programmed. He's intended to be run as a separate Node service. Once configured within your Slack instance, he will listen to your wishes and do the best he can to service you.
 
@@ -22,7 +22,7 @@ Stuart will also run automated tasks that happen in the background. For example,
 He also comes with an SMS interface which allows you to inject content into Slack with his persona. Your own little puppet with your team.
 
 
-##Getting Started
+## Getting Started
 Note that the way in which the slash command is built, it *always* relies on the Incoming Webhooks to deliver the message. So you must configure both the slash command and the incoming webhooks to make this work.
 
 1. Configure your [Slack Integrations](https://slack.com/apps/manage)
@@ -41,7 +41,7 @@ Note that the way in which the slash command is built, it *always* relies on the
     1. <b>slack\_host</b> : should match the "Webhook URL" setting found in your Inbound Webhook configuration
     1. <b>slack\_token</b> : should match the "Token" value found in your Slash Command configuration
 
-##Let it rip!
+## Let it rip!
 
     node slack-stuart.js
 
@@ -49,15 +49,15 @@ In your browser, visit:
 
     http://localhost:8087
 
-##Plugins
+## Plugins
 Stuart is a pretty dumb by himself. But his future is bright. And it's in your hands. Plugin definitions are found in <b>plugins/plugins.json</b>.
 
 By default, plugins that require configuration have their activation flag set to false. To enable them, update the "fixme" blocks and flip the activate property to true.
 
-###Plugin Creation
+### Plugin Creation
 Plugins come in one of two forms - slash command instructions and Cron tasks.
 
-####Slash Command - /stuart
+#### Slash Command - /stuart
 Integrate new commands directly into the /stuart slash command.
 
 For example, this would call Stuart's random plugin from inside of Slack
@@ -93,7 +93,7 @@ The code implemented in the "hook" file (in this case, ./plugins/slash/random) :
      stuart.slack_post("Randomly picks a number between 0 and 100. Usage : '/stuart random'", '@'+request.user_name, request.user_name);
     };
 
-####Cron Tasks
+#### Cron Tasks
 Automated activities that run on a fixed schedule. There is no interface from within Slack to drive this activity. All of it is driven externally and the results are pushed into Slack via the Incoming Webhook.
 
 To create a Cron task, you need to write one method - register() - and define the cron details in the plugins.json spec. For example, the inspire task has the following configuration:
@@ -126,7 +126,7 @@ The code implemented in the "hook" file (in this case, ./plugins/cron/inspire) :
         new cronJob('43 7 * * 1', cronTask, null, true, "America/Chicago");
     };
 
-###Tips for Testing
+### Tips for Testing
 An easy way to test your integrations is to simply fire up a new instance of Slack. It's free and you can setup the slash command in inbound webook integrations just like you would with your production Slack instance.
 
 If you're running on a localhost during test, you can use a tool like [ngrok](http://ngrok.com) to tunnel requests with a public hostname.
