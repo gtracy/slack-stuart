@@ -16,7 +16,7 @@
     "errorhandler": "^1.4.3",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
-    "logme": "0.3.8",
+    "logme": "^0.3.8",
     "method-override": "^2.3.5",
     "request": "2.29.0",
     "requestify": "0.1.17",
@@ -40,8 +40,8 @@
     "url": "https://github.com/gtracy/slack-stuart.git"
   },
   "scripts": {
-    "start" : "TZ=UTC node bin/slack-stuart.js",
-    "watch" : "TZ=UTC nodemon bin/slack-stuart.js",
-    "test"  : "mocha \"test/**/*.js\""
+    "start": "TZ=UTC node bin/slack-stuart.js",
+    "watch": "TZ=UTC nodemon bin/slack-stuart.js",
+    "test": "mocha \"test/**/*.js\""
   }
 }
